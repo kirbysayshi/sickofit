@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your Title Here</title>
+</head>
+<body>
+
+	<canvas id="cvs" height="600" width="800"></canvas>
+
+	<!-- libs -->
+	<script type="text/javascript" src="./lib/jquery.min.js"></script>
+	<script type="text/javascript" src="./lib/dat.gui.js"></script>
+	<script type="text/javascript" src="./lib/Stats.js"></script>
+	<script type="text/javascript" src="./lib/requestAnimationFrame.js"></script>
+	<script type="text/javascript" src="./lib/gl-matrix.js"></script>
+	<script type="text/javascript" src="./lib/sickofit.js"></script>
+
+	<!-- demo -->
+	<script type="text/javascript">
+
+	$(function(){
+
+		window.sickofit.loops.push(function(dt, ctx){
+			ctx.clearRect(0,0, ctx.canvas.width, ctx.canvas.height);
+
+			/*************************
+			Your code begins... NOW!
+			*************************/
+
+			// example from http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+			// which is from mr doob : http://mrdoob.com/lab/javascript/requestanimationframe/
+			var time = new Date().getTime() * 0.002;
+			var x = Math.sin( time ) * 96 + 128;
+			var y = Math.cos( time * 0.9 ) * 96 + 128;
+
+			ctx.fillStyle = 'rgb(245,245,245)';
+			ctx.fillRect( 0, 0, ctx.canvas.width, ctx.canvas.height );
+
+			ctx.fillStyle = 'rgb(255,0,0)';
+			ctx.beginPath();
+			ctx.arc( x, y, 10, 0, Math.PI * 2, true );
+			ctx.closePath();
+			ctx.fill();
+
+			/*************************
+			Your code ends.
+			*************************/
+		})
+		
+	})
+
+	</script>
+</body>
+</html>
