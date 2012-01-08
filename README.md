@@ -7,7 +7,7 @@ Usage
 -----
 
 - clone/download repo
-- add code
+- add code to index.html
 - maybe update the assembled libs by running `updatelibs.sh`
 
 Features
