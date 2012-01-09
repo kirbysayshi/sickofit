@@ -22,7 +22,7 @@ Included Libraries / Utilities
 ------------------------------
 
 * [jQuery](http://jquery.com)
-* [requestAnimationFrame](http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating)
+* [requestAnimationFrame](https://gist.github.com/1579671)
 * [gl-matrix](https://github.com/toji/gl-matrix)
 * [Stats.js](https://github.com/mrdoob/stats.js)
 * [dat-gui](http://code.google.com/p/dat-gui/)
@@ -30,9 +30,9 @@ Included Libraries / Utilities
 WHY
 ---
 
-I often do small experiments using the `canvas` element. Usually these never see the light of day. But I get excited and can't wait to start coding!
+I often do small experiments using the `canvas` element. These rarely see the light of day. But I get excited and can't wait to start coding!
 
-But I can't, because I usually need at least some boilerplate "drawing loop" code, usually with the escape key bound to halt the whole thing (60fps + laptop = poor battery and hot lap). So I make that.
+But I can't, because I usually need at least some boilerplate "drawing loop" code, usually with the escape key bound to halt the whole thing (60fps + laptop = poor battery and hot lap). So I code that.
 
 And then there are a few utilities that are just... useful. Like [jQuery](http://jquery.com), [requestAnimFrame](http://paulirish.com/2011/requestanimationframe-for-smart-animating/) or [requestAnimationFrame](http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating), [gl-matrix](https://github.com/toji/gl-matrix) for vector calculations and matrix transforms, [Stats.js](https://github.com/mrdoob/stats.js), [dat-gui](http://code.google.com/p/dat-gui/) ... 
 
